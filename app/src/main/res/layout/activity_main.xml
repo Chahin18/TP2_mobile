@@ -17,15 +17,15 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
-        android:background="#051FB4"
-        android:text="TOAST"
+        android:text="@string/button_label_toast"
         app:backgroundTint="#1250C5"
         app:backgroundTintMode="src_over"
-        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintBottom_toTopOf="@+id/show_count"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="showToast" />
 
     <Button
         android:id="@+id/button3"
@@ -37,17 +37,17 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@color/design_default_color_primary"
-        android:text="COUNT"
+        android:text="@string/button_label_count"
         app:backgroundTint="#1250C5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toBottomOf="@+id/show_count"
+        android:onClick="countUp" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/show_count"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="8dp"
@@ -56,13 +56,14 @@
         android:layout_marginRight="8dp"
         android:background="#FFEB3B"
         android:gravity="center"
-        android:text="0"
+        android:text="@string/count_initial_value"
         android:textColor="#182CB8"
         android:textSize="160sp"
         android:textStyle="bold"
         app:drawableTint="#12FFEB3B"
         app:layout_constraintBottom_toTopOf="@+id/button3"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_toast" />
 
